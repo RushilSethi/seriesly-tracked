@@ -5,13 +5,12 @@ import MovieCard from "./MovieCard";
 const ListCard = ({ movies, updateEpisode, updateSeason, toggleCompleted, deleteMovie }) => {
   const [searchTerm, setSearchTerm] = useState("");
 
-  // Filter movies based on search term (case-insensitive)
   const filteredMovies = movies.filter((movie) =>
     movie.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
-    <div className="card bg-neutral p-5 border border-gray-700">
+    <div className="card bg-neutral p-5 border border-gray-700 mb-8">
       <h2 className="text-primary text-xl mb-3">My List</h2>
 
       {/* Search Input */}
@@ -44,7 +43,6 @@ const ListCard = ({ movies, updateEpisode, updateSeason, toggleCompleted, delete
   );
 };
 
-// ✅ PropTypes
 ListCard.propTypes = {
   movies: PropTypes.arrayOf(
     PropTypes.shape({

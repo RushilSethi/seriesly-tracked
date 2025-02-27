@@ -106,7 +106,6 @@ const MovieCard = ({
   );
 };
 
-// ✅ PropTypes
 MovieCard.propTypes = {
   movie: PropTypes.shape({
     id: PropTypes.string.isRequired,

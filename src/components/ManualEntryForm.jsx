@@ -35,7 +35,7 @@ const ManualEntryForm = ({ addMovie }) => {
   };
 
   return (
-    <div className="card bg-neutral p-5 shadow-lg mt-2">
+    <div className="card bg-neutral p-5 shadow-lg mt-2 mb-8">
       <h2 className="text-primary text-xl mb-3">
         {isSeries ? "Add Series Manually" : "Add Movie Manually"}
       </h2>
