@@ -119,7 +119,7 @@ const Home = () => {
       </div>
 
       {deleteConfirmation.show && (
-        <div className="toast toast-center">
+        <div className="toast toast-center mb-8">
           <div className="alert alert-warning bg-blue-200 text-blue-800">
             <span>Are you sure you want to delete this movie?</span>
             <div className="flex gap-2">
